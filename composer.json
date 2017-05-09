@@ -19,6 +19,6 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-        "classmap": ["../app/controllers/", "../app/models/"]
+        "classmap": ["app/controllers/", "app/models/"]
     }
 }
