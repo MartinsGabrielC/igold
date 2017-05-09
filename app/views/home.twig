@@ -1,0 +1,263 @@
+{% extends 'include.twig' %}
+
+{% block content %}
+
+  <!--==============HEADER =================-->
+  <div class="jumbotron masthead">
+
+    <!--============== Slider =================-->
+
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="{{ app.urlFor('home') }}assets/img/banner.jpg" alt="">
+          </li>
+          <li>
+            <img src="{{ app.urlFor('home') }}assets/img/311.jpg" alt="">
+          </li>
+          <li>
+            <img src="{{ app.urlFor('home') }}assets/img/312.jpg" alt="">
+          </li>
+          <li>
+            <img src="{{ app.urlFor('home') }}assets/img/313.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <!--============== Sobre a Gold ==============-->
+
+    <section class="About" id="gtech">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <article>
+            <h1 class="text-center title">GOLD</h1>
+            <p>A Gold é a empresa que há 65 anos, vem inovando para oferecer aos seus clientes a melhor parceria, produtos e qualidade.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <article>
+            <h1 class="text-center title">O que é a G-Tech?</h1>
+            <p>É o mais novo e moderno conceito no segmento de transponder. A liberação de uma licença de uso de cargas. O chaveiro tem a possibilidade de utilizar os mais de 1600 serviços disponíveis para a linha Remap com um baixo investimento e um alto retorno.</p>
+             <p><strong>Benefícios</strong></p>
+             <p>Obtenha todas as cargas que ainda não possuem em seu equipamento, além de ter a liberação de todos os lançamentos futuros*. </p>
+          </article>
+            <small>*Os lançamentos futuros serão liberados de acordo com a regra de cada plano.</small>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--============== Sobre a Parceiros ==============-->
+      <section class="Partners" id="#">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <article>
+                        <h3>Não se preocupe mais em comprar cargas!</h3>
+                        <h3>Tenha uma máquina completa</h3>
+                        <h3>Não perca mais serviços</h3>
+                        <h3>Com o preço médio das cargas, você paga até 4 parcelas do plano</h3>
+                    </article>
+                </div>
+            </div>
+            </div>
+      </section>
+
+  <!--============== Planos ==============-->
+
+  <section class="Plans" id="planos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h1 class="text-center title">Planos</h1>
+          <h4 class="text-center sub-title">Escolha o melhor para você</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="plans-wrap clearfix">
+          <div class="col-lg-6">
+            <a href="{{ app.urlFor('planos.one') }}">
+              <img src="{{ app.urlFor('home') }}assets/img/client-a.jpg" alt="Sou cliente transponder" class="img-responsive">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a href="{{ app.urlFor('planos') }}">
+              <img src="{{ app.urlFor('home') }}assets/img/client-b.jpg" alt="Quero ser um novo cliente transponder" class="img-responsive">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--============== Equipamentos ==============-->
+
+  <section class="Equip" id="equipamentos">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center title">Equipamentos</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="equipItem">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="{{ app.urlFor('home') }}assets/img/remap.png" alt="" class="equipImage remap-smart">
+              </div>
+              <div class="col-lg-6">
+                <div class="equipDetails">
+                  <p class="equipName">Remap Smart</p>
+                  <ul class="equipList">
+                    <li>Visor de 4 linhas</li>
+                    <li>2GB de memória</li>
+                    <li>USB</li>
+                    <li>Utilização prática</li>
+                    <li>Garantia de 1 ano</li>
+                    <li>Acompanha componentes*</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.equipItem -->
+        </div>
+        <div class="col-lg-6">
+          <div class="equipItem">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="{{ app.urlFor('home') }}assets/img/remap-gold.png" alt="" class="equipImage remap-smart-III">
+              </div>
+              <div class="col-lg-6">
+                <div class="equipDetails">
+                  <p class="equipName">Remap Smart III</p>
+                  <ul class="equipList">
+                    <li>Tela touchscreen de 5</li>
+                    <li>2GB de memória</li>
+                    <li>USB</li>
+                    <li>Porta serial</li>
+                    <li>Bluetooth (opcional)</li>
+                    <li>Controle de iluminação</li>
+                    <li>Garantia de 1 ano</li>
+                    <li>Acompanha componentes**</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.equipItem -->
+        </div>
+      </div>
+      <p>*Componentes Remap Smart: bolsa, console, conector OBDMIC, cabo de comunicação, cabo de comunicação como o computador, fonte de alimentação e CD de instalação.**Componentes Remap Smart III: maleta, console + caneta touch, cabo de comunicação, cabo para ligar no acendedor de cigarro, cabo de alimentação, cabo de atualização de software, fonte de alimentação, CD de instalação e conector OBDMIC. Consulte seu vendedor para maiores informações sobre cabos e conectores.</p>
+    </div>
+  </section>
+
+<!--============== Newsletter ==============-->
+
+  <section class="Newsletter" id="newsletter">
+    <div class="container">
+      <div class="row">
+        <h1 class="title text-center">Newsletter</h1>
+        <h3 class="text-center">Fique informado sobre nossas novidades</h3>
+        <form action="{{ app.urlFor('newsAdd') }}" method="post">
+          <div class="form-group">
+            <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control input-lg">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-lg btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!--============== Contato ==============-->
+
+<section class="container Contact" id="contato">
+  <div class="row PageHead">
+    <div class="col-md-12">
+      <h1 class="title text-center">Contato</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="contactInfo">
+        <div class="contactInfoItem">
+          <h4>Matriz</h4>
+          <p>Rua Luigi Greco, 46 - Barra Funda<br>
+          São Paulo - SP, CEP: 01135-030
+          </p>
+        </div>
+        <div class="contactInfoItem">
+          <p><a href="mailto:&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;">&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;</a></p>
+        </div>
+        <div class="contactInfoItem">
+          <div>(11) 3879-6882</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+     <ul class="phoneList">
+       <li>
+         <h4>Sede Jundiaí</h4>
+         <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
+          Tel: (11) 4525-6550
+         </p>
+       </li>
+       <li>
+         <h4>Sede Pouso Alegre</h4>
+         <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
+          Pouso Alegre - MG - CEP: 37550-000<br>
+          Tel: (35) 3421-4298
+         </p>
+       </li>
+     </ul>
+    </div>
+    <div class="col-md-6">
+      <form action="{{ app.urlFor('sendContato') }}" method="post" class="form">
+        <div class="form-group">
+          <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block js %}
+    <script>
+      $(function() {
+        $('.nav li a').bind('click',function(event){
+              var $anchor2 = $(this).parent();
+              var $anchor = $(this);
+
+            $('.nav li').removeClass('active');
+              $anchor2.addClass('active');
+
+              var anchorLink = $anchor.attr('href');
+              anchorLink = anchorLink.replace('/', '');
+
+              $('html, body').stop().animate({
+                  scrollTop: $(anchorLink).offset().top - 80
+              }, 1500,'easeInOutExpo');
+              event.preventDefault();
+            });
+        });
+    </script>
+{% endblock %}

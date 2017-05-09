@@ -1,0 +1,132 @@
+{% extends 'include.twig' %}
+
+{% block content %}
+
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">FAQ</h3>
+            </div>
+            <div class="panel-body">
+              Encontre aqui as respostas para as dúvidas mais frequentes sobre nossos produtos, caso ainda tenha mais dúvidas, entre em contato conosco através do formulário de contato <a href="{{ app.urlFor('home') }}#contato">clicando aqui</a>.
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>1. Como funciona esse sistema?</strong>
+                <p>Trata-se de uma licença anual de uso onde o cliente GOLD poderá desfrutar das cargas atuais e todos os próximos lançamentos imediatamente durante este período sem ter a preocupação em comprar mais nenhuma carga. No caso dos novos clientes que ainda não trabalham com a tecnologia de transponder, após adquirir o equipamento REMAP que mais se encaixa com seu orçamento, escolher o plano ideal, receberá as cargas atuais e os lançamentos sempre após 6 meses da data de implantação no site da GOLD  independente da data da adesão do plano.</p>
+              </li>
+              <li class="list-group-item">
+                <strong>2. O que precisa para entrar no plano?</strong>
+                <p>Cliente GOLD que já possui REMAP II, Light, Work 1, Work 2, Smart ou Smart III (portanto que possua o cartão de expansão) poderá procurar o seu vendedor GOLD adquirindo o plano G-Tech, formalizando pagamento após preenchimento e assinatura do termo de adesão.</p>
+                <p>Cliente novos deverão escolher um dos equipamentos disponíveis para o Plano (REMAP SMART ou REMAP SMART III), alguns acessórios básicos para utilização das funções de acordo com suas necessidades e o plano escolhido que melhor atender.</p>
+              </li>
+              <li class="list-group-item">
+                <strong>3. Como devo fazer para utilizar o máximo das funções da minha REMAP após aderir ao plano G-tech?</strong>
+                <p>Consulte o seu vendedor quais cabos, conectores, soquetes e outros acessórios que são fundamentais para os novos softwares (cargas) que serão liberados em seu equipamento, assim que for confirmada a adesão ao plano G-tech.</p>
+              </li>
+              <li class="list-group-item">
+                <strong>4. O que acontece com o cliente que não quiser aderir ao plano?</strong>
+                <p>Continuará comprando as cargas individualmente, conforme o modelo de venda existente. O novo modelo (G-tech) não anula o modelo anterior.</p>
+              </li>
+              <li class="list-group-item">
+                <strong>5. O que acontece com as cargas compradas antes da adesão do plano?</strong>
+                <p>Essas cargas pertencem ao cliente e portanto continuaram no equipamento. Independentemente do tempo de permanência no plano G-tech. Então em caso desistência do plano G-tech o equipamento volta para a configuração anterior a adesão.</p>
+              </li>
+              <li class="list-group-item">
+                <strong>6. Como faço para saber quais cargas já tenho no meu equipamento?</strong>
+                <p>Ligue para o departamento técnico da Gold com o número de série de seu equipamento em mãos e solicite a listagem de suas cargas.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--============== Newsletter ==============-->
+
+  <section class="Newsletter" id="newsletter">
+    <div class="container">
+      <div class="row">
+        <h1 class="title text-center">Newsletter</h1>
+        <h3 class="text-center">Fique informado sobre nossas novidades</h3>
+        <form action="{{ app.urlFor('newsAdd') }}" method="post">
+          <div class="form-group">
+            <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control input-lg">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-lg btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--============== Contato ==============-->
+
+<section class="container Contact" id="contato">
+  <div class="row PageHead">
+    <div class="col-md-12">
+      <h1 class="title text-center">Contato</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="contactInfo">
+        <div class="contactInfoItem">
+          <h4>Matriz</h4>
+          <p>Rua Luigi Greco, 46 - Barra Funda<br>
+          São Paulo - SP, CEP: 01135-030
+          </p>
+        </div>
+        <div class="contactInfoItem">
+          <p><a href="mailto:&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;">&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;</a></p>
+        </div>
+        <div class="contactInfoItem">
+          <div>(11) 3879-6882</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+     <ul class="phoneList">
+       <li>
+         <h4>Sede Jundiaí</h4>
+         <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
+          Tel: (11) 4525-6550
+         </p>
+       </li>
+       <li>
+         <h4>Sede Pouso Alegre</h4>
+         <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
+          Pouso Alegre - MG - CEP: 37550-000<br>
+          Tel: (35) 3421-4298
+         </p>
+       </li>
+     </ul>
+    </div>
+    <div class="col-md-6">
+      <form class="form" id="phpcontactform">
+        <div class="form-group">
+          <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message"></textarea>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary btn-lg" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

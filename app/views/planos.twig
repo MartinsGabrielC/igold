@@ -1,0 +1,343 @@
+{% extends 'include.twig' %}
+
+{% block content %}
+  <!-- ============== Planos ============== -->
+
+  <section class="Pricing">
+    <div class="container">
+      <div class="row">
+        <h1 class="title text-center">Escolha seu plano</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="PricingItem">
+            <div class="row">
+              <ul class="PricingTabs">
+                <li>
+                  <a href="#" class="PricingTitle active" data-tab="start">Start</a>
+                </li>
+                <li>
+                  <a href="#" class="PricingTitle" data-tab="essencial">Essencial</a>
+                </li>
+                <li>
+                  <a href="#" class="PricingTitle" data-tab="perfect">Perfect</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="PricingPanel active" id="start">
+                  <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <img src="{{ app.urlFor('home') }}assets/img/circle-start-1y.jpg" alt="primeiro ano mais remap smart" class="PricingPlanImg">
+                            </div>
+                            <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 478,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                            </div>
+                          </div>
+                        </div><!-- /.PricingBlock -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                         <div class="row">
+                           <div class="col-lg-3">
+                             <img src="{{ app.urlFor('home') }}assets/img/circle-start-2y.jpg" alt="segundo ano" class="PricingPlanImg">
+                           </div>
+                           <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 288,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                              <p class="text-right"><small>12x s/juros ou R$ 3456,00</small></p>
+                              <p class="text-right"><small>(Cód: GGT 110001)</small></p>
+                           </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="PricingDescription">Plano com ótimo custo benefício para quem deseja iniciar no segmento com baixo investimento.</p>
+                    <ul>
+                      <li>1211 serviços <small>(140 cargas atuais)</small></li>
+                      <li>Lançamentos de cargas <small>(após 6 meses)</small></li>
+                      <li>Cargas de clonagem e gravador Eeprom liberadas somente para o plano perfect. Consulte!</li>
+                      <li>Cargas para manutenções de painéis e scanner de injeção eletrônica não serão liberadas em nenhum dos planos G-tech, pois são funções não destinadas a chaveiros.</li>
+                    </ul>
+                    <h3>Montadoras</h3>
+                    <img src="{{ app.urlFor('home') }}assets/img/volks.png" alt="volkswagen">
+                    <img src="{{ app.urlFor('home') }}assets/img/fiat.png" alt="fiat">
+                    <img src="{{ app.urlFor('home') }}assets/img/chevrolet.png" alt="chevrolet">
+                    <img src="{{ app.urlFor('home') }}assets/img/ford.png" alt="ford">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="text-center PricingLearnMore">
+                    <a href="{{ app.urlFor('cadastro-novo-cliente') }}" class="btn btn-lg btn-success">Intenção de compra</a>
+                  </p>
+                </div>
+                </div><!-- /.PricingPanel -->
+                <div class="PricingPanel" id="essencial">
+                  <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <img src="{{ app.urlFor('home') }}assets/img/circle-start-1y.jpg" alt="primeiro ano mais remap smart" class="PricingPlanImg">
+                            </div>
+                            <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 506,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                            </div>
+                          </div>
+                        </div><!-- /.PricingBlock -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                         <div class="row">
+                           <div class="col-lg-3">
+                             <img src="{{ app.urlFor('home') }}assets/img/circle-start-2y.jpg" alt="segundo ano" class="PricingPlanImg">
+                           </div>
+                           <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 316,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                              <p class="text-right"><small>12x s/juros ou R$ 3792,00</small></p>
+                              <p class="text-right"><small>(Cód: GGT 110002)</small></p>
+                           </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                          <h2>Descontos Especiais</h2>
+                          <ul class="PricingList">
+                            <li>Cabos e conectores</li>
+                            <li>Clonny Car</li>
+                            <li>4D - Hardware</li>
+                            <li>Micro Prog</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="PricingDescription">Plano intermediário com uma ótima variedade de softwares, para quem busca uma flexibilidade maior de serviços.</p>
+                    <ul>
+                      <li>1406 serviços <small>(170 cargas atuais)</small></li>
+                      <li>Lançamentos de cargas <small>(após 6 meses)</small></li>
+                      <li>Cargas de manutenções de painéis de instrumentos e Scanner de injeção eletrônica não deverão ser liberadas em nenhum dos planos G-tech, pois são funções não destinadas a Chaveiros.</li>
+                      <li>Cargas de clonagem e gravador Eeprom liberadas somente para o plano perfect. Consulte!</li>
+                    </ul>
+                    <h3>Montadoras</h3>
+                    <img src="{{ app.urlFor('home') }}assets/img/volks.png" alt="volkswagen">
+                    <img src="{{ app.urlFor('home') }}assets/img/fiat.png" alt="fiat">
+                    <img src="{{ app.urlFor('home') }}assets/img/chevrolet.png" alt="chevrolet">
+                    <img src="{{ app.urlFor('home') }}assets/img/ford.png" alt="ford">
+                    <img src="{{ app.urlFor('home') }}assets/img/peugout.png" alt="peugeot">
+                    <img src="{{ app.urlFor('home') }}assets/img/cintroen.png" alt="Cintroen">
+                    <img src="{{ app.urlFor('home') }}assets/img/renault.png" alt="Renault">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="text-center PricingLearnMore">
+                    <a href="{{ app.urlFor('cadastro-novo-cliente') }}" class="btn btn-lg btn-success">Intenção de compra</a>
+                  </p>
+                </div>
+                </div><!-- /.PricingPanel -->
+                <div class="PricingPanel" id="perfect">
+                   <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <img src="{{ app.urlFor('home') }}assets/img/circle-start-1y.jpg" alt="primeiro ano mais remap smart" class="PricingPlanImg">
+                            </div>
+                            <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 564,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                            </div>
+                          </div>
+                        </div><!-- /.PricingBlock -->
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                         <div class="row">
+                           <div class="col-lg-3">
+                             <img src="{{ app.urlFor('home') }}assets/img/circle-start-2y.jpg" alt="segundo ano" class="PricingPlanImg">
+                           </div>
+                           <div class="col-lg-9">
+                              <div>
+                                <p class="PricingTag text-right">R$ 374,00</p>
+                              </div>
+                              <p class="text-right">Mensal</p>
+                              <p class="text-right"><small>12x s/juros ou R$ 4488,00</small></p>
+                              <p class="text-right"><small>(Cód: GGT 110003)</small></p>
+                           </div>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="PricingBlock">
+                          <h2>Descontos Especiais</h2>
+                          <ul class="PricingList">
+                            <li>Cabos e conectores</li>
+                            <li>Clonny Car</li>
+                            <li>4D - Hardware</li>
+                            <li>Micro Prog</li>
+                            <li>2ª Máquina</li>
+                            <li>2ª Adesão</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="PricingDescription">O Plano perfeito que atende todas as montadoras, com mais de 1600 serviços à sua disposição.</p>
+                    <ul>
+                      <li>1632 serviços <small>(213 cargas atuais)</small></li>
+                      <li>Lançamentos de cargas <small>(após 6 meses)</small></li>
+                      <li>Clonagem</li>
+                      <li>Gravador de Eeprom</li>
+                      <li>Cargas de manutenções de painéis de instrumentos e Scanner de injeção eletrônica não deverão ser liberadas em nenhum dos planos G-tech, pois são funções não destinadas a Chaveiros.</li>
+                    </ul>
+                    <h3>Montadoras</h3>
+                    <img src="{{ app.urlFor('home') }}assets/img/volks.png" alt="volkswagen">
+                    <img src="{{ app.urlFor('home') }}assets/img/fiat.png" alt="fiat">
+                    <img src="{{ app.urlFor('home') }}assets/img/chevrolet.png" alt="chevrolet">
+                    <img src="{{ app.urlFor('home') }}assets/img/ford.png" alt="ford">
+                    <img src="{{ app.urlFor('home') }}assets/img/peugout.png" alt="peugeot">
+                    <img src="{{ app.urlFor('home') }}assets/img/cintroen.png" alt="Cintroen">
+                    <img src="{{ app.urlFor('home') }}assets/img/renault.png" alt="Renault">
+                    <img src="{{ app.urlFor('home') }}assets/img/honda.png" alt="Honda">
+                    <img src="{{ app.urlFor('home') }}assets/img/audi.png" alt="Audi">
+                    <img src="{{ app.urlFor('home') }}assets/img/nissan.png" alt="Nissan">
+                    <img src="{{ app.urlFor('home') }}assets/img/mercedes.png" alt="Mercedes">
+                    <img src="{{ app.urlFor('home') }}assets/img/mitsubishi.png" alt="Mitsubishi">
+                    <img src="{{ app.urlFor('home') }}assets/img/hyundai.png" alt="Hyundai">
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="text-center PricingLearnMore">
+                    <a href="{{ app.urlFor('cadastro-novo-cliente') }}" class="btn btn-lg btn-success">Intenção de compra</a>
+                  </p>
+                </div>
+                </div><!-- /.PricingPanel -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--============== Newsletter ==============-->
+
+  <section class="Newsletter">
+    <div class="container">
+      <div class="row">
+        <h1 class="title text-center">Newsletter</h1>
+        <h3 class="text-center">fique informado sobre nossas novidades</h3>
+        <form action="">
+          <div class="form-group">
+            <input type="text" name="newsletter" placeholder="Digite seu e-mail" class="form-control input-lg">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-lg btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!--============== Contato ==============-->
+
+<section class="container Contact" id="contato">
+  <div class="row PageHead">
+    <div class="col-md-12">
+      <h1 class="title text-center">Contato</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="contactInfo">
+        <div class="contactInfoItem">
+          <h4>Matriz</h4>
+          <p>Rua Luigi Greco, 46 - Barra Funda<br>
+          São Paulo - SP, CEP: 01135-030
+          </p>
+        </div>
+        <div class="contactInfoItem">
+          <p><a href="mailto:&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;">&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;</a></p>
+        </div>
+        <div class="contactInfoItem">
+          <div>(11) 3879-6882</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+     <ul class="phoneList">
+       <li>
+         <h4>Sede Jundiaí</h4>
+         <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
+          Tel: (11) 4525-6550
+         </p>
+       </li>
+       <li>
+         <h4>Sede Pouso Alegre</h4>
+         <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
+          Pouso Alegre - MG - CEP: 37550-000<br>
+          Tel: (35) 3421-4298
+         </p>
+       </li>
+     </ul>
+    </div>
+    <div class="col-md-6">
+      <form class="form" id="phpcontactform">
+        <div class="form-group">
+          <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message"></textarea>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary btn-lg" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
