@@ -1,0 +1,557 @@
+@charset "utf-8";
+
+/*=============== FONT ===============*/
+
+@font-face {
+  font-family: 'HelveticaNeueLTProBd';
+  src: url('../font/HelveticaNeueLTPro-Bd.eot');
+  src: url('../font/HelveticaNeueLTPro-Bd.eot?#iefix') format('embedded-opentype'),
+       url('../font/HelveticaNeueLTPro-Bd.woff') format('woff'),
+       url('../font/HelveticaNeueLTPro-Bd.ttf')  format('truetype'),
+       url('../font/HelveticaNeueLTPro-Bd.svg#HelveticaNeueLTPro-Bd') format('svg');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTProLT';
+  src: url('../font/HelveticaNeueLTPro-Lt.eot');
+  src: url('../font/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'),
+       url('../font/HelveticaNeueLTPro-Lt.woff') format('woff'),
+       url('../font/HelveticaNeueLTPro-Lt.ttf')  format('truetype'),
+       url('../font/HelveticaNeueLTPro-Lt.svg#HelveticaNeueLTPro-Lt') format('svg');
+}
+
+/*========== GLOBAL STYLES==============*/
+
+body {
+  font-family: 'HelveticaNeueLTProLT';
+	background:#F2F2F2;
+	position:relative;
+}
+
+a {
+	color:#0f3068;
+}
+
+a:hover, a:focus {
+	color:#1eb45a;
+}
+p {
+	color: #0f3068;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'HelveticaNeueLTProBd';
+	color: #0f3068;
+}
+
+.colorWhite {color: #ffffff !important;}
+/*========== HEADER ==============*/
+
+.navbar-header {
+	min-height:80px;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #808080;
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+	max-height: 370px;
+}
+
+.jumbotron {
+	position: relative;
+	height:auto;
+	overflow:hidden;
+}
+
+.navbar {
+	background:	#353434;
+	border-bottom: 0;
+}
+
+.navbar-collapse {
+	background:none;
+	border:0;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	padding-top: 5px;
+	filter:none;
+	-ms-filter:none;
+}
+
+.navbar .nav > li > a {
+	font-size: 1.2em;
+	color: #FBFAF3;
+	text-transform:uppercase;
+	font-weight: bolder;
+	text-shadow: 0 1px 0 #666;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+	color: #65BF95;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+	background:none;
+	color: #FBFAF3;
+	text-decoration: underline;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+
+.navbar .nav {
+	padding:12px;
+}
+
+.navbar .btn, .navbar .btn-group {
+	margin-top:0;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	color: #FFF;
+	background-color: transparent;
+}
+
+.navbar-default + div {
+	margin-top: 33px;
+}
+
+.navbar-brand {
+	padding: 7px 15px;
+}
+.facebook {margin-top: 22px; margin-right: 20px !important;}
+/* button */
+.btn-success {
+	background-color: #0B9e0f;
+	background-image:none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+	background-color: #22bb5f!important;
+	color:#FFF!important;
+}
+
+.btn-primary {
+	background-color: #0f3068;
+	background-image:none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav > .active > a.btn {
+	background-color: #22bb5f!important;
+	color:#FFF!important;
+}
+
+.panel-primary {
+	border-color: #4f5b66;
+}
+
+.panel-primary > .panel-heading {
+	background-color: #4f5b66;
+	border-color: #4f5b66;
+}
+
+
+
+/*========== TIPOGRAFIA ==============*/
+.title {
+	font-family: 'HelveticaNeueLTProBd';
+	//color: #4f5b66;
+	color:#30302F;
+}
+
+.sub-title {
+  font-size: 2.5em;
+  text-decoration: underline;
+  color:#30302F;
+}
+
+@media screen and (min-width: 800px) {
+	.title {
+		font-size: 3.5em;
+	}
+}
+
+/*========== MAIN FEATURES ==============*/
+
+.Partners {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    //padding-top: 20px;
+    //padding-bottom: 20px;
+    background-color: #3B3B3B;
+}
+.Partners p {color: #f0f5fe}
+.Plans {
+	margin-top: 0px;
+	padding-bottom: 50px;
+	background-color: #1352A2;
+}
+.Plans .title{
+	color: #f0f5fe;
+}
+
+.Plans .sub-title{
+	color:#f0f5fe;
+}
+
+.Partners h3 {color: #f0f5fe; text-align: center;}
+/*========== EQUIPAMENTOS ==============*/
+.Equip {
+	background: #eee;
+	margin-top: 45px;
+	//padding: 90px 0;
+}
+
+.Equip .equipItem {
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 0 5px 1px #ccc;
+	margin-top: 40px;
+	min-height: 310px;
+}
+
+.Equip .equipItem .equipImage {
+	display: block;
+	max-width: 100%;
+
+}
+
+.Equip .equipItem .equipName {
+	font-size: 2em;
+	font-weight: bold;
+	color: #0f3068;
+}
+
+.Equip .equipItem .equipList {
+	list-style-position: inside;
+	font-family: 'HelveticaNeueLTProLT';
+	font-size: 1.2em;
+	color: #0f3068;
+	padding-left: 0;
+}
+
+.Equip p {
+  font-family: 'HelveticaNeueLTProLT';
+  text-align: justify;
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #4f5b66;
+  margin-top: 10px;
+}
+.remap-smart {width: 200px; margin: 0 auto}
+.remap-smart-III {width: 152px; margin: 0 auto; margin-top: 30px;}
+/*========== SOBRE ==============*/
+.About p {
+	font-family: 'HelveticaNeueLTProLT';
+	font-size: 1.5em;
+	color:#30302F;
+}
+.About small {
+    font-family: 'HelveticaNeueLTProLT';
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1em;
+    color:#30302F;
+    margin-top: 10px;
+}
+/*========== NEWSLETTER ==============*/
+.Newsletter {
+	background-color: #1352A2;
+	background-image: url(../img/banner-news.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 60px 0;
+}
+
+/*============= CADASTRO ==============*/
+.Subscribe .checkbox-inline {
+	margin: 20px 0;
+}
+
+/*========== PRINCING ======================*/
+.Pricing {
+	margin-top: 80px;
+	background: #eee;
+}
+
+.Pricing .PricingItem {
+	background: #fff;
+	padding: 20px;
+	margin: 10px 0 40px 0;
+}
+
+.PricingItem .PricingTabs {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.PricingItem .PricingTabs li {
+	display: block;
+}
+
+.PricingItem .PricingTabs .PricingTitle {
+	font-family: 'HelveticaNeueLTProBd';
+	font-size: 3em;
+}
+
+.PricingItem .PricingTabs .PricingTitle:hover,
+.PricingItem .PricingTabs .PricingTitle:active,
+.PricingItem .PricingTabs .PricingTitle:focus {
+	text-decoration: none;
+	color: #F6A704;
+}
+
+.PricingItem .PricingTabs .PricingTitle.active {
+	color: #F6A704;
+	vertical-align: middle;
+}
+
+.PricingItem .PricingPanel {
+	display: none;
+	margin-top: 40px;
+}
+
+.PricingItem .PricingPanel.active {
+	display: block;
+}
+
+.PricingItem .PricingPanel ul {
+	padding: 0;
+	list-style-position: inside;
+}
+
+@media screen and (min-width: 800px) {
+
+	.PricingItem .PricingTabs li {
+		display: inline-block;
+		width: 33%;
+	}
+	.PricingItem .PricingTabs .PricingTitle {
+		width: 210px;
+		height: 210px;
+	}
+	.PricingItem .PricingTabs .PricingTitle.active {
+		display: inline-block;
+		padding: 70px 0;
+		background: #1e4971;
+		border-radius: 100%;
+	}
+}
+
+/* pricing blocks */
+.PricingPanel .PricingBlock {
+	background: #1e4971;
+	padding: 20px;
+	margin-bottom: 20px;
+	color: #F6A704;
+}
+
+.PricingPanel .PricingBlock p,
+.PricingPanel .PricingBlock h1,
+.PricingPanel .PricingBlock h2,
+.PricingPanel .PricingBlock h3 {
+	font-size: 1.5em;
+	color: #F6A704;
+}
+
+.PricingPanel .PricingBlock .PricingTag {
+	font-family: 'HelveticaNeueLTProBd';
+	font-size: 4em;
+	color: #F6A704;
+	margin: 0;
+}
+
+.PricingPanel .PricingBlock span:not(.PricingTag) {
+	font-size: 1.5em;
+	vertical-align: top;
+}
+
+.PricingPanel .PricingBlock .year {
+	font-size: 1.5em;
+}
+
+.PricingPanel .PricingDescription {
+	font-size: 1.5em;
+	font-weight: bold;
+	border-bottom: 1px solid #0f3068;
+}
+
+.PricingPanel .PricingLearnMore {
+	margin-top: 40px;
+}
+
+.PricingPanel ul li {
+	font-family: 'HelveticaNeueLTProLT';
+	font-size: 1.5em;
+	color: #1e4971;
+}
+
+.PricingPlanImg {
+	display: inline-block;
+}
+
+.PricingPanel .PricingBlock .PricingList li {
+	list-style-position: inside;
+	color: #F6A704;
+}
+
+/* montadora */
+.PricingPanel .CarManufacturerIcon img {
+	margin: 0 5px;
+}
+
+/*========== CONTACT ==============*/
+
+.Contact {
+	margin-top:25px;
+}
+
+.Contact .phoneList {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.Contact .phoneList li {
+	padding: 20px 0 20px 50px;
+}
+
+.Contact .phoneList li:not(:last-child) {
+	border-bottom: 1px solid #0f3068;
+}
+
+.Contact .phoneList h4 {
+	font-family: 'HelveticaNeueLTProBd';
+	color: #0f3068;
+}
+
+.Contact .phoneList p {
+	margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+	.Contact .phoneList  {
+		max-width: 70%;
+	}
+}
+
+.Contact .contactInfo {
+	list-style-type: none;
+	padding: 10px 0;
+	margin: 50px 0;
+	border-top: 1px solid #0f3068;
+	border-bottom: 1px solid #0f3068;
+	text-align: center;
+}
+
+.Contact .contactInfo .contactInfoItem {
+	padding: 0 40px;
+	vertical-align: middle;
+	text-align: left;
+	color: #0f3068;
+}
+
+.Contact .contactInfo .contactInfoItem > * {
+	margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+	.Contact .contactInfo .contactInfoItem:nth-child(2) {
+		padding-top: 22px;
+		padding-bottom: 20px;
+	}
+
+	.Contact .contactInfo .contactInfoItem:nth-child(3) {
+		padding-top: 20px;
+	}
+	.Contact .contactInfo .contactInfoItem {
+		display: inline-block;
+		height: 70px;
+	}
+	.Contact .contactInfo .contactInfoItem:not(:last-child) {
+		border-right: 1px solid #0f3068;
+	}
+}
+
+/*========== FORM ==============*/
+.Subscribe {
+	margin-top: 83px;
+	padding: 40px 0;
+}
+
+/*============= FAQ ==================*/
+
+.faq {
+	margin-top: 30px;
+	padding: 40px;
+}
+
+/*========== FOOTER ==============*/
+.footer {
+	position: relative;
+	background: #FFD464;
+	overflow:hidden;
+	margin-top:30px;
+}
+
+.copyright {
+	margin:15px 0;
+}
+
+.copyright p {
+	color: #0f3068;
+}
+
+
+/* media query para a navbar */
+@media screen and (max-width: 1199px) {
+	.logo-small,
+	.facebook {
+		display: none;
+	}
+}
+@media screen and (max-width: 990px) {
+    .navbar-default + div {
+        margin-top: 106px;
+    }
+
+}
+@media screen and (max-width: 766px) {
+    .navbar-default + div {
+        margin-top: 66px;
+        padding-bottom: 45px;
+    }
+
+}
+/*========== PARSLEY PLUGIN STYLE ==============*/
+.parsley-errors-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.parsley-errors-list .parsley-required {
+	color: red;
+	padding: 3px 0 0 5px;
+}
+
+.parsley-errors-list .parsley-custom-error-message {
+	color: red;
+	padding: 3px 0 0 5px;
+}
