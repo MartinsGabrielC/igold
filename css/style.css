@@ -302,6 +302,17 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
+.PricingPanel .PricingPromotion{
+    background: #F6A704;
+    margin-bottom: 20px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.PricingPanel .PricingPromotion p{
+    margin-bottom: 0px;
+}
+
 .PricingItem .PricingTabs li {
 	display: block;
 }
@@ -357,7 +368,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* pricing blocks */
 .PricingPanel .PricingBlock {
-	background: #1e4971;
+	background: #1352A2;
 	padding: 20px;
 	margin-bottom: 20px;
 	color: #F6A704;
@@ -368,7 +379,8 @@ h1,h2,h3,h4,h5,h6 {
 .PricingPanel .PricingBlock h2,
 .PricingPanel .PricingBlock h3 {
 	font-size: 1.5em;
-	color: #F6A704;
+	color: #F0F5FF;
+    margin: 0;
 }
 
 .PricingPanel .PricingBlock .PricingTag {
@@ -409,7 +421,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .PricingPanel .PricingBlock .PricingList li {
 	list-style-position: inside;
-	color: #F6A704;
+	color: #f0f5fe;
 }
 
 /* montadora */
@@ -554,4 +566,22 @@ h1,h2,h3,h4,h5,h6 {
 .parsley-errors-list .parsley-custom-error-message {
 	color: red;
 	padding: 3px 0 0 5px;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }

@@ -63,25 +63,37 @@
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="/"><img src="img/logo.png" alt="logo" class="img-responsive"></a></div>
-      <p class="navbar-text navbar-right hidden-sm"><a href="/"><img src="img/gtech-logo-small.jpg" alt="" class="logo-small"></a></p>
-      <p class="navbar-text navbar-right hidden-sm facebook"><a href="https://www.facebook.com/industriachavesgold" title="Curta nossa página" target="_blank"><img src="img/facebook.png" alt="Curta a nossa página"></a></p>
-
-
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">GOLD</a></li>
-        <li><a href="#gtech">G-TECH</a></li>
-        <li><a href="#planos">PLANOS</a></li>
-        <li><a href="#equipamentos">EQUIPAMENTOS</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contato" id="cttScroll">CONTATO</a></li>
+        <li class="active"><a href="#" class="scroll">GOLD</a></li>
+        <li><a href="#igold" class="scroll">IGOLD</a></li>
+        <li><a href="#planos" class="scroll">PLANOS</a></li>
+        <li><a href="#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
+        <li><a href="#faq" class="scroll">FAQ</a></li>
+        <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
+        <li class="dropdown" id="menuLogin">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <form class="form" id="formLogin">
+                <input name="username" id="username" type="text" placeholder="Username">
+                <input name="password" id="password" type="password" placeholder="Password"><br>
+                <button type="button" id="btnLogin" class="btn">Login</button>
+              </form>
+            </div>
+          </li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
   </div>
+  <!-- /.container -->
 </nav>
 
 
@@ -112,7 +124,7 @@
   <div class="container">
     <!--============== Sobre a Gold ==============-->
 
-    <section class="About" id="gtech">
+    <section class="About" id="igold">
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <article>
@@ -126,11 +138,11 @@
         <div class="col-lg-12 col-md-12">
           <article>
             <h1 class="text-center title">O que é o IGold?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae diam in leo feugiat porttitor id eget arcu. 
-              Aenean vulputate diam nec libero posuere tempor. Nulla vel venenatis orci. Curabitur vitae arcu quis nunc pellentesque congue 
-              vel id lectus. Nullam ornare, turpis quis egestas lacinia, dolor risus aliquet nulla, id feugiat ex arcu et quam. In ornare erat 
-              et faucibus laoreet. Phasellus vulputate auctor nibh, ut porta mauris rhoncus eu. Nulla vehicula, nunc ac cursus malesuada, 
-              mauris lacus tincidunt dui, in hendrerit leo nulla at turpis. Maecenas vestibulum sodales ante, in suscipit risus porttitor 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae diam in leo feugiat porttitor id eget arcu.
+              Aenean vulputate diam nec libero posuere tempor. Nulla vel venenatis orci. Curabitur vitae arcu quis nunc pellentesque congue
+              vel id lectus. Nullam ornare, turpis quis egestas lacinia, dolor risus aliquet nulla, id feugiat ex arcu et quam. In ornare erat
+              et faucibus laoreet. Phasellus vulputate auctor nibh, ut porta mauris rhoncus eu. Nulla vehicula, nunc ac cursus malesuada,
+              mauris lacus tincidunt dui, in hendrerit leo nulla at turpis. Maecenas vestibulum sodales ante, in suscipit risus porttitor
               posuere. Praesent sed fringilla neque, in.</p>
              <h2 class="sub-title"><strong>Benefícios</strong></h2>
              <p>Obtenha todas as cargas que ainda não possuem em seu equipamento, além de ter a liberação de todos os lançamentos futuros*. </p>
@@ -145,9 +157,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-                <a href="/planos/one">
-                  <img src="img/pexels-photo.jpg" alt="Sou cliente transponder" class="img-responsive" style="heigth=195px; width: 100%;">
-                </a>
+                <img src="img/pexels-photo.jpg" alt="Sou cliente transponder" class="img-responsive" style="heigth=195px; width: 100%;">
               </div>
               <div class="col-lg-6">
                   <article>
@@ -174,12 +184,12 @@
       <div class="row">
         <div class="plans-wrap clearfix">
           <div class="col-lg-6" style="margin-top: 40px;">
-            <a href="/planos/one">
+            <a href="planos/ig17/">
               <img src="img/client-a.jpg" alt="Sou cliente transponder" class="img-responsive" style="width: 100%;">
             </a>
           </div>
           <div class="col-lg-6" style="margin-top: 40px;">
-            <a href="/planos">
+            <a href="planos/ig17s/">
               <img src="img/client-b.jpg" alt="Quero ser um novo cliente transponder" class="img-responsive" style="width: 100%;">
             </a>
           </div>
@@ -402,25 +412,25 @@
 <script src="js/main.js"></script>
 
 <!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============-->
-    <script>
-      $(function() {
-        $('.nav li a').bind('click',function(event){
-              var $anchor2 = $(this).parent();
-              var $anchor = $(this);
+<script>
+  $(function() {
+    $('.scroll').bind('click',function(event){
+          var $anchor2 = $(this).parent();
+          var $anchor = $(this);
 
-            $('.nav li').removeClass('active');
-              $anchor2.addClass('active');
+        $('.nav li').removeClass('active');
+          $anchor2.addClass('active');
 
-              var anchorLink = $anchor.attr('href');
-              anchorLink = anchorLink.replace('/', '');
+          var anchorLink = $anchor.attr('href');
+          anchorLink = anchorLink.replace('/', '');
 
-              $('html, body').stop().animate({
-                  scrollTop: $(anchorLink).offset().top - 80
-              }, 1500,'easeInOutExpo');
-              event.preventDefault();
-            });
+          $('html, body').stop().animate({
+              scrollTop: $(anchorLink).offset().top - 80
+          }, 1500,'easeInOutExpo');
+          event.preventDefault();
         });
-    </script>
+    });
+</script>
 <!--=============ONE PAGE SCROLLING SCRIPTS ENDS============-->
 
 <!-- notifications -->
@@ -447,7 +457,6 @@
 <script>
   $(function(){
      var navMain = $("#nav-main");
-
      navMain.on("click", "a", null, function () {
          navMain.collapse('hide');
      });
