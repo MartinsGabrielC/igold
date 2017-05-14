@@ -107,7 +107,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="PlanBlock">
-							<img src="../../img/ig17.png" alt="Plano IG17" class="img-responsive">
+							<img src="../../img/ig17s.png" alt="Plano IG17S" class="img-responsive">
 						</div>
 					</div>
 				</div>
@@ -119,18 +119,20 @@
 									<div class="PricingBlock">
 										<h2>Hardware Incluso:</h2>
 										<ul class="PricingList">
-											<li>OBD E CLONNER</li>
+											<li>OBD, CLONNER e Memória</li>
 											<li>Fonte</li>
-											<li>Cabo Extensor</li>
+											<li>Cabos e Acessórios</li>
 										</ul>
 										<h2>Funções Disponíveis:</h2>
 										<ul class="PricingList">
 											<li>Funções via OBD</li>
 											<li>Clonagens</li>
+                                            <li>Soldas</li>
+                                            <li>Pinças</li>
 										</ul>
 										<h2>Softwares Disponíveis*:</h2>
 										<ul class="PricingList">
-											<li>Nacionais até 2016 <small>(exceto linha G6 VW)</small></li>
+											<li>Todos Nacionais e Importados</li>
 										</ul>
 									</div>
 								</div>
@@ -157,6 +159,7 @@
 								<p>Adquira o plano iG 17S por 2 anos e ganhe o kit completo de hardwares</p>
 								<p>Composição do kit:</p>
 								<p>1 Módulo OBD/1 Módulo Clonner/1 Módulo Memória/1 Cabo Extensor/1 Cabo Adaptador DC/1 Cabo Soquete IG01/2 Cabos Solda(IG02, IG04)/1 Cabo Pinça Soic8/1 Fonte 12V</p>
+                                <p>Aproveite e pague em 24xR$250,00 ( Economize R$1740,00 )</p>
 							</div>
 						</div>
 						<div class="row">
@@ -168,9 +171,9 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="PricingBlock" style="padding-top:0;">
-									<p class="PricingTag text-right">R$320,00<p class="text-right"><small>12x s/Juros</small></p></p>
-									<p class="text-right">Hardware: R$95,00</p>
-									<p class="text-right">Plano: R$225,00</p>
+									<p class="PricingTag text-right">R$395,00<p class="text-right"><small>12x s/Juros</small></p></p>
+									<p class="text-right">Hardware: R$145,00</p>
+									<p class="text-right">Plano: R$250,00</p>
 									<p class="text-right" style="font-size: 1em;">A partir do 2º ano, o valor cobrado será somente o do plano</p>
 								</div>
 							</div>
@@ -179,7 +182,7 @@
 				</div>
 				<div class="row">
 				 <p class="text-center PricingLearnMore">
-				   <a href="../cadastro?plan=ig17" class="btn btn-lg btn-success">Intenção de Compra</a>
+				   <a href="../cadastro?plan=ig17s" class="btn btn-lg btn-success">Intenção de Compra</a>
 				 </p>
 			   </div>
 			   <div class="row">
@@ -201,7 +204,7 @@
       <div class="row">
         <h1 class="title text-center" style="color: #f0f5fe;">Newsletter</h1>
         <h3 class="text-center" style="color: #f0f5fe;">Fique informado sobre nossas novidades</h3>
-        <form action="/newsletter" method="post">
+        <form action="../newsletter" method="post">
           <div class="form-group">
             <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control input-lg">
           </div>

@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>IGOLD</title>
+<title>Gold-Tech</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="../../css/bootstrap.css" rel="stylesheet">
@@ -73,7 +73,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
       <ul class="nav navbar-nav">
-        <li><a href="../../" class="scroll">GOLD</a></li>
+        <li><a href="#" class="scroll">GOLD</a></li>
         <li><a href="../../#igold" class="scroll">IGOLD</a></li>
         <li><a href="../../#planos" class="scroll">PLANOS</a></li>
         <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
@@ -96,103 +96,39 @@
   <!-- /.container -->
 </nav>
 
-<!--============== Planos ==============-->
-<section class="Pricing">
-	<div class="container">
-		<!-- <div class="row">
-      		<h1 class="title text-center">Planos para clientes</h1>
-    	</div> -->
-		<div class="row">
-			<div class="colg-lg-12 PricingItem PricingPanel active" id="start">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="PlanBlock">
-							<img src="../../img/ig17.png" alt="Plano IG17" class="img-responsive">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="row">
-									<div class="PricingBlock">
-										<h2>Hardware Incluso:</h2>
-										<ul class="PricingList">
-											<li>OBD E CLONNER</li>
-											<li>Fonte</li>
-											<li>Cabo Extensor</li>
-										</ul>
-										<h2>Funções Disponíveis:</h2>
-										<ul class="PricingList">
-											<li>Funções via OBD</li>
-											<li>Clonagens</li>
-										</ul>
-										<h2>Softwares Disponíveis*:</h2>
-										<ul class="PricingList">
-											<li>Nacionais até 2016 <small>(exceto linha G6 VW)</small></li>
-										</ul>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-12">
-										<p class="PricingDescription">Vantagens de ter o IGOLD</p>
-										<ul>
-											<li>Muito fácil de usar</li>
-											<li>Manual no próprio APP</li>
-											<li>Baixo investimento</li>
-											<li>As principais cargas do mercado</li>
-											<li>Não precisa de internet e nem de dados**</li>
-											<li>Após 3 anos, liberação permanente das cargas***</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="row PricingPromotion">
-							<div class="col-lg-12">
-								<p class="PricingDescription">Promoção de lançamento por tempo limitado</p>
-								<p>Adquira o plano iG 17S por 2 anos e ganhe o kit completo de hardwares</p>
-								<p>Composição do kit:</p>
-								<p>1 Módulo OBD/1 Módulo Clonner/1 Módulo Memória/1 Cabo Extensor/1 Cabo Adaptador DC/1 Cabo Soquete IG01/2 Cabos Solda(IG02, IG04)/1 Cabo Pinça Soic8/1 Fonte 12V</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12">
-								<p class="PricingDescription">Montadoras</p>
-								<img src="../../img/montadoras.png" alt="Montadoras" class="img-responsive">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="PricingBlock" style="padding-top:0;">
-									<p class="PricingTag text-right">R$320,00<p class="text-right"><small>12x s/Juros</small></p></p>
-									<p class="text-right">Hardware: R$95,00</p>
-									<p class="text-right">Plano: R$225,00</p>
-									<p class="text-right" style="font-size: 1em;">A partir do 2º ano, o valor cobrado será somente o do plano</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-				 <p class="text-center PricingLearnMore">
-				   <a href="../cadastro?plan=ig17" class="btn btn-lg btn-success">Intenção de Compra</a>
-				 </p>
-			   </div>
-			   <div class="row">
-				   <small>
-					   <p style="margin:0;">*Consulte serviços disponíveis em www.igold.chavesgold.com.br</p>
-					   <p style="margin:0;">**Para utilização diária não é necessária conexão com a internet, porém para download e atualização é necessário</p>
-					   <p style="margin:0;">***Liberação das cargas do momento da adessão do plano</p>
-				   </small>
-			   </div>
-			</div>
-		</div>
-	</div>
-</section>
+<!--============== Formulário ==============-->
+
+  <section class="Subscribe">
+      <h1 class="text-center">INTENÇÃO DE COMPRA</h1>
+    <form method="post" id="form" data-parsley-validate>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-push-2">
+              <div class="form-group">
+                <input type="hidden" name="plano" value="<?php echo $_GET['plan']; ?>">
+              </div>
+            <div class="form-group">
+              <input type="text" name="nome" placeholder="Nome completo" class="form-control input-lg" data-required-message="O campo Nome é obrigatório" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="tel" id="tel" placeholder="Telefone" class="form-control input-lg" data-required-message="O campo Telefone é obrigatório" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="cel" placeholder="Celular" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="E-mail" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-push-2">
+            <button class="btn btn-lg btn-block btn-primary" id="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
 
 <!--============== Newsletter ==============-->
 
@@ -258,7 +194,7 @@
      </ul>
     </div>
     <div class="col-md-6">
-      <form action="/contato" method="post" class="form">
+      <form action="" method="post" class="form">
         <div class="form-group">
           <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
         </div>

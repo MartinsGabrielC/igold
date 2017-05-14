@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Gold-Tech</title>
+<title>IGOLD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
@@ -342,7 +342,7 @@
           </p>
         </div>
         <div class="contactInfoItem">
-          <p><a href="mailto:&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;">&#103;&#116;&#101;&#99;&#104;&#64;&#99;&#104;&#97;&#118;&#101;&#115;&#103;&#111;&#108;&#100;&#46;&#99;&#111;&#109;&#46;&#98;&#114;</a></p>
+          <p><a href="mailto:&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
         </div>
         <div class="contactInfoItem">
           <div>(11) 3879-6882</div>

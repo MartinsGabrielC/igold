@@ -273,7 +273,7 @@ h1,h2,h3,h4,h5,h6 {
 /*========== NEWSLETTER ==============*/
 .Newsletter {
 	background-color: #1352A2;
-	background-image: url(../img/banner-news.jpg);
+	background-image: url(../img/banner-news.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	padding: 60px 0;
@@ -304,8 +304,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .PricingPanel .PricingPromotion{
     background: #F6A704;
+    margin: 0;
     margin-bottom: 20px;
-    margin: 10px 0;
     padding: 5px;
 }
 
