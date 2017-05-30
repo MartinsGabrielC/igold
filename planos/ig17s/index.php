@@ -61,34 +61,36 @@
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
      </button>
-      <a class="navbar-brand" href="#"><img src="../../img/logo.png" alt="logo" class="img-responsive"></a>
+     <a class="navbar-brand" href="#"><img src="../../img/logo.png" alt="logo" class="img-responsive"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
       <ul class="nav navbar-nav">
-        <li><a href="../../" class="scroll">GOLD</a></li>
+        <li><a href="#" class="scroll">GOLD</a></li>
         <li><a href="../../#igold" class="scroll">IGOLD</a></li>
         <li><a href="../../#planos" class="scroll">PLANOS</a></li>
         <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
         <li><a href="../../#faq" class="scroll">FAQ</a></li>
         <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
-        <li class="dropdown" id="menuLogin">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
-            <div class="dropdown-menu" style="padding:17px;">
-              <form class="form" id="formLogin">
-                <input name="username" id="username" type="text" placeholder="Username">
-                <input name="password" id="password" type="password" placeholder="Password"><br>
-                <button type="button" id="btnLogin" class="btn">Login</button>
-              </form>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
             </div>
-          </li>
+            <div class="form-group">
+                <input type="text" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Sign In</button>
+        </form>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -300,8 +302,6 @@
 
 <script src="../../js/bootstrap.min.js"></script>
 
-<!--==================== All Page Scripts ===================== -->
-<script src="../../js/main.js"></script>
 
 <!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============-->
 <script>
