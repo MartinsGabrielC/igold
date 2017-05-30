@@ -140,19 +140,26 @@
         <div class="col-lg-12 col-md-12">
           <article>
             <h1 class="text-center title">O que é o IGold?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae diam in leo feugiat porttitor id eget arcu.
-              Aenean vulputate diam nec libero posuere tempor. Nulla vel venenatis orci. Curabitur vitae arcu quis nunc pellentesque congue
-              vel id lectus. Nullam ornare, turpis quis egestas lacinia, dolor risus aliquet nulla, id feugiat ex arcu et quam. In ornare erat
-              et faucibus laoreet. Phasellus vulputate auctor nibh, ut porta mauris rhoncus eu. Nulla vehicula, nunc ac cursus malesuada,
-              mauris lacus tincidunt dui, in hendrerit leo nulla at turpis. Maecenas vestibulum sodales ante, in suscipit risus porttitor
-              posuere. Praesent sed fringilla neque, in.</p>
-             <h2 class="sub-title"><strong>Benefícios</strong></h2>
-             <p>Obtenha todas as cargas que ainda não possuem em seu equipamento, além de ter a liberação de todos os lançamentos futuros*. </p>
+            <p>É um revolucionário programador de chaves, com leitura de senhas via OBD(diagnose), via pinça e solda.
+            Também faz clonagem de chaves!</p>
+             <h2 class="sub-title"><strong>Benefícios:</strong></h2>
+             <ul>
+                 <li><p>Muito fácil de usar</p></li>
+                 <li><p>Manual no próprio APP</p></li>
+                 <li><p>Baixo investimento</p></li>
+                 <li><p>As principais cargas do mercado</p></li>
+                 <li><p>Não precisa de internet e nem de dados**</p></li>
+                 <li><p>Após 3 anos, liberação permanente das cargas***</p></li>
+             </ul>
           </article>
-            <small>*Os lançamentos futuros serão liberados de acordo com a regra de cada plano.</small>
         </div>
       </div>
     </section>
+    <small>
+        <p style="margin:0;">*Consulte serviços disponíveis em www.igold.chavesgold.com.br</p>
+        <p style="margin:0;">**Para utilização diária não é necessária conexão com a internet, porém para download e atualização é necessário</p>
+        <p style="margin:0;">***Liberação das cargas do momento da adessão do plano</p>
+    </small>
   </div>
   <!--============== Sobre a Parceiros ==============-->
       <section class="Partners" id="#">
@@ -164,9 +171,9 @@
               <div class="col-lg-6">
                   <article>
                       <h3>Não se preocupe mais em comprar cargas!</h3>
-                      <h3>Tenha uma máquina completa</h3>
-                      <h3>Não perca mais serviços</h3>
-                      <h3>Com o preço médio das cargas, você paga até 4 parcelas do plano</h3>
+                      <h3>Você já possui o equipamento</h3>
+                      <h3>Seu próprio celular</h3>
+                      <h3>Toda tecnologia em transponder agora na ponta de seus dedos</h3>
                   </article>
               </div>
             </div>
