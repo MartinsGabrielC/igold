@@ -85,14 +85,14 @@
             <ul class="nav navbar-nav navbar-right">
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="username" placeholder="Username">
+                        <input type="text" class="form-control" name="username" placeholder="Usuário">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="password" placeholder="Password">
+                        <input type="text" class="form-control" name="password" placeholder="Senha">
                     </div>
-                    <button type="submit" class="btn btn-default">Sign In</button>
+                    <button type="submit" class="btn btn-default">Login</button>
                 </form>
-            </ul>
+              </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>

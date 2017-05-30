@@ -73,24 +73,25 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
-      <ul class="nav navbar-nav">
-        <li><a href="#" class="scroll">GOLD</a></li>
-        <li><a href="../../#igold" class="scroll">IGOLD</a></li>
-        <li><a href="../../#planos" class="scroll">PLANOS</a></li>
-        <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
-        <li><a href="../../#faq" class="scroll">FAQ</a></li>
-        <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
-    <li>
-        <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Username">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-default">Sign In</button>
-        </form>
-    </li>
+        <ul class="nav navbar-nav">
+          <li><a href="../../#" class="scroll">GOLD</a></li>
+          <li><a href="../../#igold" class="scroll">IGOLD</a></li>
+          <li><a href="../../#planos" class="scroll">PLANOS</a></li>
+          <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
+          <li><a href="../../#faq" class="scroll">FAQ</a></li>
+          <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                  <input type="text" class="form-control" name="username" placeholder="Usuário">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" name="password" placeholder="Senha">
+              </div>
+              <button type="submit" class="btn btn-default">Login</button>
+          </form>
+        </ul>
     </div>
     <!-- /.navbar-collapse -->
   </div>
