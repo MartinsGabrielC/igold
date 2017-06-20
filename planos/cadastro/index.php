@@ -3,7 +3,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Gold-Tech</title>
+<title>IGOLD</title>
+<link rel="shortcut icon" href="../../img/logoFavIconLow.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="../../css/bootstrap.css" rel="stylesheet">
@@ -16,11 +17,6 @@
 
 <link href="../../css/style.css" rel="stylesheet" media="all">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 
 <!--==============Mordernizr =================-->
 
@@ -31,6 +27,27 @@
 <link rel="stylesheet" href="../../css/flexslider.css" />
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/jquery.flexslider.js"></script>
+<!--============== Mask =================-->
+<script src="../../js/jquery.mask.min.js"></script>
+<!--============== Mask Definition ==================-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var options =  {onKeyPress: function(cep, e, field, options){
+          var masks = ['(00)000000000', '(00)00000000'];
+            mask = (cep.length>11) ? masks[0] : masks[1];
+          $('.TELEFONE').mask(mask, options);
+        }};
+
+        $('.TELEFONE').mask('00000-000', options);
+        // $('.TELEFONE').mask('(AA) ZAAAA-AAAA',
+        //             {'translation':
+        //                 {
+        //                     'A': {pattern: /[0-9]/},
+        //                     'Z': {pattern: /[0-9]/, optional: true}
+        //                 }
+        //             });
+    });
+</script>
 <script type="text/javascript">
   $(window).load(function() {
     $('.flexslider').flexslider({
@@ -39,21 +56,7 @@
     });
   });
 </script>
-    <!-- google analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-65655318-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <!-- google analytics -->
-
-<!--==============CONTACT FORM=================-->
-<script src="../../js/contact_form.js"></script>
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 
@@ -70,12 +73,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="../../img/logo.png" alt="logo" class="img-responsive"></a>
+            <a class="navbar-brand" href="#"><img src="../../img/logoNav.png" alt="logo" class="img-responsive"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
             <ul class="nav navbar-nav">
-                <li><a href="#" class="scroll">GOLD</a></li>
+                <li><a href="../../#" class="scroll">GOLD</a></li>
                 <li><a href="../../#igold" class="scroll">IGOLD</a></li>
                 <li><a href="../../#planos" class="scroll">PLANOS</a></li>
                 <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
@@ -83,12 +86,12 @@
                 <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-right" role="search">
+                <form class="navbar-form navbar-right" role="form" id="formLogin" method="post" action="../../web/logar.php" style="margin:8px auto;">
                     <div class="form-group">
-                        <input type="text" class="form-control" name="username" placeholder="Usuário">
+                        <input type="text" class="form-control" name="email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="password" placeholder="Senha">
+                        <input type="password" class="form-control" name="senha" placeholder="Senha">
                     </div>
                     <button type="submit" class="btn btn-default">Login</button>
                 </form>
@@ -105,26 +108,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-push-2">
-              <form method="post" id="form" data-parsley-validate>
-              <div class="form-group">
-                <input type="hidden" name="plano" value="<?php echo $_GET['plan']; ?>">
-              </div>
-            <div class="form-group">
-              <input type="text" name="nome" placeholder="Nome completo" class="form-control input-lg" data-required-message="O campo Nome é obrigatório" required>
-            </div>
-            <div class="form-group">
-              <input type="text" name="tel" id="tel" placeholder="Telefone" class="form-control input-lg" data-required-message="O campo Telefone é obrigatório" required>
-            </div>
-            <div class="form-group">
-              <input type="text" name="cel" placeholder="Celular" class="form-control input-lg">
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="E-mail" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
-            </div>
+              <form method="post" id="form-buy" data-parsley-validate>
+                <div class="form-group">
+                    <input type="hidden" name="plano" value="<?php echo $_GET['plan']; ?>">
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="key" value="com.eos.igold">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Nome" class="form-control input-lg" data-required-message="O campo Nome é obrigatório" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="telefone" id="tel" placeholder="Telefone" class="form-control input-lg TELEFONE" data-required-message="O campo Telefone é obrigatório" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" class="form-control input-lg" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cidade" placeholder="Cidade" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="estado" placeholder="Estado" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
+                </div>
+
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-lg-push-2">
+          <div class="col-lg-4 col-lg-push-4">
             <button class="btn btn-lg btn-block btn-primary" id="submit">Enviar</button>
           </div>
         </div>
@@ -196,7 +206,7 @@
      </ul>
     </div>
     <div class="col-md-6">
-      <form action="" method="post" class="form">
+      <form action="" method="post" class="form" id="contact-form">
         <div class="form-group">
           <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
         </div>
@@ -220,7 +230,7 @@
   <div class="container">
     <div class="row copyright">
       <p class="text-center">Copyright &copy; 2017. IGold Todos os direitos reservados.</p>
-        <p class="text-right">by: <a href="https://github.com/MartinsGabrielC" target="_blank" style="text-decoration: none;">Gabriel Martins</a></p>
+        <p class="text-right">by: <a href="https://www.linkedin.com/in/martins-gabriel/" target="_blank" style="text-decoration: none;">Gabriel Martins</a></p>
     </div>
   </div>
 </div>
@@ -286,6 +296,28 @@
      });
  });
 </script>
+<script type="text/javascript">
+    $("#form-buy").submit(function(e) {
+        var url = "../../mobile/setPreCadastro.php";
+        $.ajax({
+               type: "POST",
+               url: url,
+               data: $("#form-buy").serialize(),
+               success: function(data)
+               {
+                   alert('Cadastro Salvo!');
+                   window.location = "http://www.igold.ind.br";
+               },
+               error: function(data){
+                   alert('Erro ao enviar o cadastro');
+               }
+             });
+
+        e.preventDefault();
+    });
+</script>
+<!--==============CONTACT FORM=================-->
+<script src="../../js/contact_form.js"></script>
 
 </body>
 </html>
