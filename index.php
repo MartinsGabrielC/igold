@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +6,9 @@
 <title>IGOLD</title>
 <link rel="shortcut icon" href="img/logoFavIconLow.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Gabriel Martins">
+<meta name="description" content="IGold é um revolucionário programador de chaves, com leitura de senhas via OBD(diagnose), via pinça e solda. Também faz clonagem de chaves!">
+<meta name="keywords" content="igold, OBD, programador de chave">
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -21,6 +24,9 @@
 
 <script src="js/modernizr.js"></script>
 
+<!--==============DIALOG =================-->
+<link rel="stylesheet" type="text/css" href="web/css/dialog-polyfill.css" />
+
 <!--===================FLEX SLIDER=======================-->
 
 <link rel="stylesheet" href="css/flexslider.css" />
@@ -30,7 +36,8 @@
   $(window).load(function() {
     $('.flexslider').flexslider({
       animation: "slide",
-      useCSS: Modernizr.touch
+      useCSS: Modernizr.touch,
+      directionNav: false
     });
   });
 </script>
@@ -38,46 +45,7 @@
 <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 
 <!--==============Logo & Menu Bar=================-->
-
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-     </button>
-     <a class="navbar-brand" href="#"><img src="img/logoNav.png" alt="logo" class="img-responsive"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
-      <ul class="nav navbar-nav">
-        <li><a href="#" class="scroll">GOLD</a></li>
-        <li><a href="#igold" class="scroll">IGOLD</a></li>
-        <li><a href="#planos" class="scroll">PLANOS</a></li>
-        <li><a href="#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
-        <li><a href="#faq" class="scroll">FAQ</a></li>
-        <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <form class="navbar-form navbar-right" role="form" id="formLogin" method="post" action="web/logar.php" style="margin:8px auto;">
-            <div class="form-group">
-                <input type="text" class="form-control" name="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="senha" placeholder="Senha" required>
-            </div>
-            <button type="submit" class="btn btn-default">Login</button>
-        </form>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
-
+<?php include('navbar.php'); ?>
 
     <!--==============HEADER =================-->
     <div class="jumbotron masthead">
@@ -103,49 +71,69 @@
     </div>
 
 
-  <div class="container">
-    <!--============== Sobre a Gold ==============-->
+      <!--============== Sobre a Gold ==============-->
 
     <section class="About" id="igold">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <article>
-            <h1 class="text-center title">GOLD</h1>
-            <p>A Gold é a empresa que há 65 anos, vem inovando para oferecer aos seus clientes a melhor parceria, produtos e qualidade.</p>
-          </article>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <img src="img/logoGold.png" style="display:inline-block">
+                <!-- <h1 class="text-center title" style="background-color:#353434; color:#f0f5fe;">GOLD</h1> -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                      <!-- <article> -->
+                        <p>A Gold é a empresa que há 65 anos, vem inovando para oferecer aos seus clientes a melhor parceria, produtos e qualidade.</p>
+                      <!-- </article> -->
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <h1 class="text-center title" style="background-color:#353434; color:#f0f5fe; padding: 1rem;">O que é o IGold?</h1>
+          </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p>É um revolucionário programador de chaves, com leitura de senhas via OBD(diagnose), via pinça e solda.
+                    Também faz clonagem de chaves!</p>
+                    <p>Todas suas operações (diagnose, clonner e memória) são realizadas à partir de um aplicativo de celular.</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <article>
-            <h1 class="text-center title">O que é o IGold?</h1>
-            <p>É um revolucionário programador de chaves, com leitura de senhas via OBD(diagnose), via pinça e solda.
-            Também faz clonagem de chaves!</p>
-             <h2 class="sub-title"><strong>Benefícios:</strong></h2>
-             <ul>
-                 <li><p>Muito fácil de usar</p></li>
-                 <li><p>Manual no próprio APP</p></li>
-                 <li><p>Baixo investimento</p></li>
-                 <li><p>As principais cargas do mercado</p></li>
-                 <li><p>Não precisa de internet e nem de dados**</p></li>
-                 <li><p>Após 3 anos, liberação permanente das cargas***</p></li>
-             </ul>
-          </article>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-8 text-right" style="padding-left: 0;">
+                <h2 class="sub-title" style="background-color:#353434; color:#f0f5fe; padding:1rem 10px;"><strong>Benefícios:</strong></h2>
+            </div>
         </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                     <ul>
+                         <li><p>Muito prático de usar</p></li>
+                         <li><p>Manual no próprio APP</p></li>
+                         <li><p>Baixo investimento</p></li>
+                         <li><p>As principais cargas do mercado</p></li>
+                         <li><p>Não precisa de internet e nem de dados**</p></li>
+                         <li><p>Após 3 anos, liberação permanente das cargas***</p></li>
+                     </ul>
+                </div>
+              </div>
+          </div>
       </div>
     </section>
-    <small>
+
         <p style="margin:0;">*Consulte serviços disponíveis em www.igold.chavesgold.com.br</p>
         <p style="margin:0;">**Para utilização diária não é necessária conexão com a internet, porém para download e atualização é necessário</p>
         <p style="margin:0;">***Liberação das cargas do momento da adessão do plano</p>
-    </small>
-  </div>
+    
   <!--============== Sobre a Parceiros ==============-->
       <section class="Partners" id="#">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6" style="padding:0;">
+                <div class="col-lg-12" style="padding:0;">
+                    <img src="img/celular_home.jpg" alt="Não se preocupe mais em comprar cargas! Você já possui o equipamento" class="img-responsive" style="width: 100%;">
+                </div>
+              <!-- <div class="col-lg-6" style="padding:0;">
                 <img src="img/pexels-photo.jpg" alt="Sou cliente transponder" class="img-responsive" style="heigth=195px; width: 100%;">
               </div>
               <div class="col-lg-6">
@@ -155,7 +143,7 @@
                       <h3>Seu próprio celular</h3>
                       <h3>Toda tecnologia em transponder agora na ponta de seus dedos</h3>
                   </article>
-              </div>
+              </div> -->
             </div>
             </div>
       </section>
@@ -184,6 +172,9 @@
           </div>
         </div>
       </div>
+      <div class="row" style="margin-top: 40px;">
+          <div class="col-lg-12"><a href="planos/ig17s/"><img src="img/promo1.jpg" alt="Promoção de lançamento! Adquira o plano IG17S por 2 anos e ganhe os hardware" class="img-responsive" style="width: 100%;"></a><div>
+      <div>
     </div>
   </section>
 
@@ -199,18 +190,16 @@
           <div class="equipItem">
             <div class="row">
               <div class="col-lg-6">
-                <img src="img/igold.jpg" alt="" class="equipImage remap-smart">
+                <img src="img/moduloOdb.png" alt="" class="equipImage">
               </div>
               <div class="col-lg-6">
                 <div class="equipDetails">
-                  <p class="equipName">Lorem ipsum dolor</p>
+                  <p class="equipName">Módulo OBD</p>
                   <ul class="equipList">
-                    <li>sit amet</li>
-                    <li>consectetur adipiscing elit</li>
-                    <li>Nunc ac ligula vel arcu blandit eleifend</li>
-                    <li>Proin ac nunc molestie</li>
-                    <li>ullamcorper at</li>
-                    <li>Duis hendrerit nec ipsum non tristique</li>
+                    <li>Principal módulo do iGold (obrigatório em todos procedimentos)</li>
+                    <li>Responsável por processar todas as funcionalidades do sistema</li>
+                    <li>Não necessita de outros módulos para operar </li>
+                    <li>Se comunica com o carro (diagnóstico) e com os demais módulos</li>
                   </ul>
                 </div>
               </div>
@@ -222,11 +211,55 @@
           <div class="equipItem">
             <div class="row">
               <div class="col-lg-6">
-                <img src="img/igold-gold.jpg" alt="" class="equipImage remap-smart-III">
+                <img src="img/moduloClonner.png" alt="" class="equipImage">
               </div>
               <div class="col-lg-6">
                 <div class="equipDetails">
-                    <p class="equipName">Lorem ipsum dolor</p>
+                    <p class="equipName">Módulo CLONNER</p>
+                    <ul class="equipList">
+                      <li>Identificação de transponders</li>
+                      <li>Clonagem de transponders</li>
+                      <li>Dedicação e desbloqueio de transponders</li>
+                      <li>Operações de diagnóstico que necessitam do ID da chave</li>
+                      <li>Operações de pinça/solda que necessitam do ID da chave</li>
+                    </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.equipItem -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="equipItem">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="img/moduloMemoria.png" alt="" class="equipImage">
+              </div>
+              <div class="col-lg-6">
+                <div class="equipDetails">
+                  <p class="equipName">Módulo MEMÓRIA</p>
+                  <ul class="equipList">
+                    <li>Leitura de senha diretamente de painéis e centrais (cabo pinça/solda)</li>
+                    <li>Preparação/apresentação de chaves diretamente no imobilizador (cabo solda)</li>
+                    <li>Reset/bypass de painéis e centrais (cabo de pinça/solda)</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.equipItem -->
+        </div>
+        <!-- <div class="col-lg-6">
+          <div class="equipItem">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="img/moduloClonner.png" alt="" class="equipImage">
+              </div>
+              <div class="col-lg-6">
+                <div class="equipDetails">
+                    <p class="equipName">Módulo CLONNER</p>
                     <ul class="equipList">
                       <li>sit amet</li>
                       <li>consectetur adipiscing elit</li>
@@ -239,10 +272,10 @@
               </div>
 
             </div>
-          </div><!-- /.equipItem -->
-        </div>
+          </div><!-- /.equipItem
+        </div> -->
       </div>
-      <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ex eget erat euismod vestibulum. In interdum lorem luctus urna rhoncus pretium. Proin maximus hendrerit consectetur. Etiam interdum facilisis posuere. Phasellus aliquam pulvinar gravida. Nulla vitae lacinia lorem. Aliquam placerat mi at nibh tristique faucibus ac sed nibh.</p>
+      <!-- <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae ex eget erat euismod vestibulum. In interdum lorem luctus urna rhoncus pretium. Proin maximus hendrerit consectetur. Etiam interdum facilisis posuere. Phasellus aliquam pulvinar gravida. Nulla vitae lacinia lorem. Aliquam placerat mi at nibh tristique faucibus ac sed nibh.</p> -->
     </div>
   </section>
 
@@ -262,28 +295,39 @@
             <ul class="list-group">
               <li class="list-group-item">
                 <strong>1. Como funciona esse sistema?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum gravida lacus, a maximus dui sodales eget. Sed at tempus arcu. Nullam vel viverra elit, ornare sollicitudin neque. Mauris quis quam eros. Duis laoreet, neque in luctus hendrerit, mi turpis varius mauris, vulputate tincidunt augue justo ut arcu. Integer lacinia vehicula lorem, ac aliquam libero consectetur in. Integer volutpat elementum ultricies. Vivamus aliquam pharetra massa in pellentesque. Quisque sed leo eget nisi blandit finibus. Praesent placerat augue eget eleifend dapibus. Nunc consequat mauris in elementum aliquet.</p>
+                <p>O iGOLD funciona através da combinação de um celular com
+                    sistema operacional Android com conectores especialmente
+                    desenvolvidos pela iG, para possibilitar ao chaveiro a programação
+                    de chaves automotivas codificadas.</p>
+                <p>O aplicativo iGold, baixado gratuitamente da playstore, permite que
+                    você realize gravações, cópias e clonagens de chaves automotivas,
+                    através dos conectores que acompanharão o kit  iGOLD.</p>
               </li>
               <li class="list-group-item">
                 <strong>2. O que precisa para entrar no plano?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque eleifend nisi, ac elementum lectus accumsan id. Etiam a odio vel turpis pellentesque elementum. Fusce eget nisi tempus sapien egestas consequat. Maecenas varius, magna et facilisis finibus, erat tellus fermentum ligula, sit amet rhoncus quam arcu sit amet metus. Sed ultricies pharetra tortor sit amet elementum. Nullam ut magna laoreet, dapibus mauris eu, blandit nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus in tellus odio.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisl nulla, porttitor sed nunc quis, pellentesque placerat lectus. Morbi dignissim eget nibh vitae vehicula.</p>
+                <p>O cliente precisa possuir um smartphone com Android versão 4.1 ou superior</p>
+                <p>Baixar o aplicativo iGold na Google PlayStore</p>
+                <p>Fazer a adesão a um dos planos iGOLD. Para isso, entre em contato com um distribuidor Gold, ligue para o televendas ou peça para alguém entrar em contato<p>
               </li>
               <li class="list-group-item">
-                <strong>3. Como devo fazer para utilizar o máximo das funções do meu IGold após aderir ao plano?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra libero eu semper convallis. Proin at nibh vitae nunc lobortis maximus. Maecenas finibus dictum lectus, quis dapibus purus dictum ut. Integer placerat tincidunt orci, quis rhoncus lectus faucibus sit amet. Aliquam erat volutpat. Pellentesque auctor eu turpis a auctor. Pellentesque ornare libero vel blandit maximus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris eu nisi faucibus, molestie lacus efficitur, ullamcorper augue. Etiam sit amet urna vestibulum, facilisis est quis, malesuada odio. Vestibulum finibus felis mi, et porttitor dolor luctus nec. Mauris sit amet quam quis lacus varius suscipit et a nunc. Ut vehicula pretium sapien, non tempor turpis feugiat in. Cras ac rhoncus sem, sit amet maximus est. Vivamus auctor eu massa a elementum.</p>
+                <strong>3. Como devo fazer para utilizar meu iGold após aderir ao plano?</strong>
+                <p>O aplicativo iGOLD funciona tanto online quanto offline, entretanto, é necessário que ele seja conectado à internet  (wi-fi ou plano de dados) de tempos em tempos para renovar a licença e receber as atualizações. Assim, antes de utilizá-lo, atualize o seu aplicativo.</p>
+                <p>O conector Modulo OBD-iGOLD também precisa ser conectado à internet de tempos em tempos, para renovar a licença. Conecte-o à  fonte de energia que acompanha o Kit, abra o aplicativo iGold, selecione a opção Atualizar Conector e siga as instruções.</p>
+                <p>As atualizações trarão novas cargas, melhorias no aplicativo, inovações e muito mais, possibilitando sempre uma experiência de alto nível ao usuário. Junto com seu aplicativo estará disponível o manual de operação do iGold.</p>
               </li>
               <li class="list-group-item">
                 <strong>4. O que acontece com o cliente que não quiser aderir ao plano?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur sollicitudin dignissim. Donec malesuada lorem et enim placerat, id cursus ante dapibus. In lobortis augue dui, quis consequat odio posuere malesuada. Praesent id tortor pharetra, vestibulum leo eu, mattis lectus. Maecenas et tortor ut quam porttitor fringilla ullamcorper pellentesque magna. Pellentesque quis mauris sed orci egestas gravida at mattis lacus. Ut mollis est leo, eu varius sem dapibus ac. Praesent nec interdum enim. Integer rhoncus mollis risus, ac congue nisl fermentum in. Pellentesque id eros sit amet mi consequat accumsan non quis urna. Etiam id lacinia nibh.</p>
+                <p>Sem a adesão a um plano iGold não é possível utilizar o aplicativo, mesmo que ele esteja instalado no seu smartphone.</p>
               </li>
               <li class="list-group-item">
-                <strong>5. O que acontece com as cargas compradas antes da adesão do plano?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis aliquet lectus, eget euismod tortor pharetra scelerisque. Phasellus lacinia aliquet neque sed placerat. Donec augue augue, egestas in orci id, semper consequat augue. Pellentesque ut sollicitudin lacus, id tincidunt augue. Vestibulum ornare in neque in porttitor. Etiam at libero interdum, euismod lorem ac, mollis dui. Vivamus pellentesque tincidunt leo a finibus.</p>
+                <strong>5. Quais as vantagens desse produto?</strong>
+                <p>São muitas:</p>
+                <p>Economia: Atualmente, o investimento necessário para a aquisição de qualquer um dos diversos maquinários e seus acessórios que trabalham com cópia de chaves automotivas codificadas é bastante alto, inclusive impedindo que alguns chaveiros possam oferecer esse serviço. Com o iGold isso muda radicalmente: o investimento é consideravelmente menor, uma vez que o seu smartphone será a sua máquina.</p>
+                <p>Praticidade: O fato de você usar seu celular como um acessório de codificação já lhe economiza um espaço de trabalho surpreendente, diante de uma situação onde você irar realizar uma  gravação de chaves Transponder; seja qual for lugar em que você estiver, você estará com seu  iGOLD no bolso. Em qualquer hora, em qualquer lugar, você estará pronto para solucionar o problema do seu cliente.</p>
               </li>
               <li class="list-group-item">
                 <strong>6. Como faço para saber quais cargas já tenho no meu equipamento?</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis aliquet lectus, eget euismod tortor pharetra scelerisque. Phasellus lacinia aliquet neque sed placerat. Donec augue augue, egestas in orci id, semper consequat augue. Pellentesque ut sollicitudin lacus, id tincidunt augue. Vestibulum ornare in neque in porttitor. Etiam at libero interdum, euismod lorem ac, mollis dui. Vivamus pellentesque tincidunt leo a finibus.</p>
+                <p>Basta conferir a lista no seu aplicativo. Além disso, junto com seu kit iGold você receberá uma lista dos carros que você estará adquirindo com seu plano. Essa lista também pode ser visualizada na sua área de cliente no site iGold.</p>
               </li>
             </ul>
           </div>
@@ -297,9 +341,9 @@
   <section class="Newsletter" id="newsletter">
     <div class="container">
       <div class="row">
-        <h1 class="title text-center" style="color: #f0f5fe;">Newsletter</h1>
+        <h1 class="title text-center" style="color: #f0f5fe;">Boletim Informativo</h1>
         <h3 class="text-center" style="color: #f0f5fe;">Fique informado sobre nossas novidades</h3>
-        <form action="/newsletter" method="post">
+        <form action="#" method="post">
           <div class="form-group">
             <input type="text" name="email" placeholder="Digite seu e-mail" class="form-control input-lg">
           </div>
@@ -324,21 +368,21 @@
       <div class="contactInfo">
         <div class="contactInfoItem">
           <h4>Matriz</h4>
-          <p>Rua Luigi Greco, 46 - Barra Funda<br>
-          São Paulo - SP, CEP: 01135-030
+          <p>Rua Benevides Ignácio Ramos, 108 – Parque Sisi<br/>
+              São Carlos – SP  CEP: 13562-500
           </p>
         </div>
         <div class="contactInfoItem">
-          <p><a href="mailto:&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
+          <p><a href="mailto:&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
         </div>
         <div class="contactInfoItem">
-          <div>(11) 3879-6882</div>
+          <div>(11) 3879-6870</div>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
      <ul class="phoneList">
        <li>
          <h4>Sede Jundiaí</h4>
@@ -354,7 +398,8 @@
          </p>
        </li>
      </ul>
-    </div>
+    </div> -->
+    <div class="col-md-3"></div>
     <div class="col-md-6">
       <form method="post" class="form" id="contact-form">
         <div class="form-group">
@@ -380,11 +425,30 @@
   <div class="container">
     <div class="row copyright">
       <p class="text-center">Copyright &copy; 2017. IGold Todos os direitos reservados.</p>
-        <p class="text-right">by: <a href="https://www.linkedin.com/in/martins-gabriel/" target="_blank" style="text-decoration: none;">Gabriel Martins</a></p>
+        <p class="text-right">by: <a href="https://www.linkedin.com/in/martins-gabriel/" rel="noopener" target="_blank" style="text-decoration: none;">Gabriel Martins</a></p>
     </div>
   </div>
 </div>
 
+<!--============== Dialog ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+  </div>
+</dialog>
+
+<!--============== Dialog Account Errada ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+ </div>
+</dialog>
 
 
 <!--==============QUERY LIBRARY=================-->
@@ -442,12 +506,19 @@
   $(function(){
      var navMain = $("#nav-main");
      navMain.on("click", "a", null, function () {
-         navMain.collapse('hide');
+         if($(window).width() < 1313)
+            navMain.collapse('hide');
      });
  });
 </script>
 <!--==============CONTACT FORM=================-->
 <script src="js/contact_form.js"></script>
+
+<!--==============JQUERY =================-->
+<script src="web/js/jquery.mask.min.js"></script>
+
+<!--============== DIALOG =================-->
+<script src="web/js/dialog-polyfill.js"></script>
 
 </body>
 </html>

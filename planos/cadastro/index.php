@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,46 +61,7 @@
 <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 
 <!--==============Logo & Menu Bar=================-->
-
-
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="../../img/logoNav.png" alt="logo" class="img-responsive"></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
-            <ul class="nav navbar-nav">
-                <li><a href="../../#" class="scroll">GOLD</a></li>
-                <li><a href="../../#igold" class="scroll">IGOLD</a></li>
-                <li><a href="../../#planos" class="scroll">PLANOS</a></li>
-                <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
-                <li><a href="../../#faq" class="scroll">FAQ</a></li>
-                <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-right" role="form" id="formLogin" method="post" action="../../web/logar.php" style="margin:8px auto;">
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" name="senha" placeholder="Senha">
-                    </div>
-                    <button type="submit" class="btn btn-default">Login</button>
-                </form>
-              </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+<?php include('../../navbar.php'); ?>
 <!--============== Formulário ==============-->
 
   <section class="Subscribe">
@@ -122,13 +83,13 @@
                     <input type="text" name="telefone" id="tel" placeholder="Telefone" class="form-control input-lg TELEFONE" data-required-message="O campo Telefone é obrigatório" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" class="form-control input-lg" required>
+                    <input type="email" name="email" placeholder="Email" class="form-control input-lg" id="email-form" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="cidade" placeholder="Cidade" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
+                    <input type="text" name="cidade" placeholder="Cidade" class="form-control input-lg" data-required-message="O campo Cidade é obrigatório" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="estado" placeholder="Estado" class="form-control input-lg" data-required-message="O campo E-mail é obrigatório" required>
+                    <input type="text" name="estado" placeholder="Estado" class="form-control input-lg" data-required-message="O campo Estado é obrigatório" required>
                 </div>
 
           </div>
@@ -161,69 +122,70 @@
     </div>
   </section>
 
-<!--============== Contato ==============-->
+  <!--============== Contato ==============-->
 
-<section class="container Contact" id="contato">
-  <div class="row PageHead">
-    <div class="col-md-12">
-      <h1 class="title text-center">Contato</h1>
+  <section class="container Contact" id="contato">
+    <div class="row PageHead">
+      <div class="col-md-12">
+        <h1 class="title text-center">Contato</h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="contactInfo">
-        <div class="contactInfoItem">
-          <h4>Matriz</h4>
-          <p>Rua Luigi Greco, 46 - Barra Funda<br>
-          São Paulo - SP, CEP: 01135-030
-          </p>
-        </div>
-        <div class="contactInfoItem">
-          <p><a href="mailto:&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
-        </div>
-        <div class="contactInfoItem">
-          <div>(11) 3879-6882</div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="contactInfo">
+          <div class="contactInfoItem">
+            <h4>Matriz</h4>
+            <p>Rua Benevides Ignácio Ramos, 108 – Parque Sisi<br/>
+                São Carlos – SP  CEP: 13562-500
+            </p>
+          </div>
+          <div class="contactInfoItem">
+            <p><a href="mailto:&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
+          </div>
+          <div class="contactInfoItem">
+            <div>(11) 3879-6870</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-     <ul class="phoneList">
-       <li>
-         <h4>Sede Jundiaí</h4>
-         <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
-          Tel: (11) 4525-6550
-         </p>
-       </li>
-       <li>
-         <h4>Sede Pouso Alegre</h4>
-         <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
-          Pouso Alegre - MG - CEP: 37550-000<br>
-          Tel: (35) 3421-4298
-         </p>
-       </li>
-     </ul>
+    <div class="row">
+      <!-- <div class="col-md-6">
+       <ul class="phoneList">
+         <li>
+           <h4>Sede Jundiaí</h4>
+           <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
+            Tel: (11) 4525-6550
+           </p>
+         </li>
+         <li>
+           <h4>Sede Pouso Alegre</h4>
+           <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
+            Pouso Alegre - MG - CEP: 37550-000<br>
+            Tel: (35) 3421-4298
+           </p>
+         </li>
+       </ul>
+      </div> -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form method="post" class="form" id="contact-form">
+          <div class="form-group">
+            <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="col-md-6">
-      <form action="" method="post" class="form" id="contact-form">
-        <div class="form-group">
-          <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
-        </div>
-        <div class="form-group">
-          <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message" required></textarea>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
+  </section>
+  
 <!--============== Footer ==============-->
 
 <div class="footer">
@@ -235,6 +197,25 @@
   </div>
 </div>
 
+<!--============== Dialog ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+  </div>
+</dialog>
+
+<!--============== Dialog Account Errada ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+ </div>
+</dialog>
 
 
 <!--==============QUERY LIBRARY=================-->
@@ -305,12 +286,26 @@
                data: $("#form-buy").serialize(),
                success: function(data)
                {
-                   alert('Cadastro Salvo!');
-                   window.location = "http://www.igold.ind.br";
+                   console.log(data[0].status);
+                   if(data[0].status == 'FALHA CADASTRADO'){
+                        alert('Você já possui uma conta');
+                   }else if(data[0].status == 'FALHA SOLICITADO'){
+                       alert('Email já cadastrado');
+                       document.getElementById("email-form").value = '';
+                       document.getElementById("email-form").focus();
+                   }else if(data[0].status == 'SUCESSO'){
+                       alert('Cadastro realizado com sucesso');
+                       window.location = "http://www.igold.ind.br";
+                   }else{
+                       alert('Falha ao realizar o cadastro');
+                   }
+                //    alert('Cadastro Salvo!');
+                //    window.location = "http://www.igold.ind.br";
                },
                error: function(data){
                    alert('Erro ao enviar o cadastro');
-               }
+               },
+               dataType: 'json'
              });
 
         e.preventDefault();

@@ -16,16 +16,16 @@ h1,h2,h3,h4,h5,h6{font-family:'HelveticaNeueLTProBd';color:#0f3068;}
 .navbar-default .navbar-toggle{border-color:#808080;}
 .navbar-toggle{margin-top:20px;}
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{max-height:370px;}
-.jumbotron{position:relative;height:auto;overflow:hidden;}
-.navbar{background:#353434;border-bottom:0;}
-.navbar-collapse{background:none;border:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;padding-top:5px;filter:none;-ms-filter:none;}
+.jumbotron{position:relative;height:auto;overflow:hidden;padding-top: 80px;}
+.navbar{background:#1F204C;border-bottom:0;}
+.navbar-collapse{background:none;border:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;filter:none;-ms-filter:none;}
 .navbar .nav > li > a{font-size:1.2em;color:#FBFAF3;text-transform:uppercase;font-weight:bolder;text-shadow:0 1px 0 #666;}
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover{color:#65BF95;}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus{background:none;color:#FBFAF3;text-decoration:underline;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
-.navbar .nav{padding:12px;}
+.navbar .nav{padding:12px;padding-bottom: 0;}
 .navbar .btn, .navbar .btn-group{margin-top:0;}
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
@@ -112,7 +112,7 @@ h1,h2,h3,h4,h5,h6{font-family:'HelveticaNeueLTProBd';color:#0f3068;}
 .Contact .contactInfo .contactInfoItem:not(:last-child){border-right:1px solid #0f3068;}
 }
 .Subscribe{margin-top:83px;padding:40px 0;}
-.faq{margin-top:30px;padding:40px;}
+.faq{margin-top:30px;}
 .footer{position:relative;background:#1352A2;overflow:hidden;margin-top:30px;}
 .copyright{margin:15px 0;}
 .copyright p{color:#f0f5fe;}
@@ -135,3 +135,8 @@ h1,h2,h3,h4,h5,h6{font-family:'HelveticaNeueLTProBd';color:#0f3068;}
 @media(max-width:768px){#login-dp{background-color:inherit;color:#fff;}
 #login-dp .bottom{background-color:inherit;border-top:0 none;}
 }
+.form-group{vertical-align: top !important;}
+#forgot-password a{color:#FBFAF3;}
+.user-info{font-size: 1em;color: #FBFAF3;text-transform: none;font-weight: bolder;text-shadow: 0 1px 0 #666;text-align: center;}
+#back-session{font-size: 1em;color: #FBFAF3;text-transform: none;font-weight: bolder;text-shadow: 0 1px 0 #666;text-align: center;padding: 0;}
+#back-session:hover{color:#65BF95;}

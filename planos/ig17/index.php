@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,22 +18,8 @@
 <link href="../../css/style.css" rel="stylesheet" media="all">
 
 <!--==============Mordernizr =================-->
-
-<script src="../../js/modernizr.js"></script>
-
-<!--===================FLEX SLIDER=======================-->
-
-<link rel="stylesheet" href="../../css/flexslider.css" />
 <script src="../../js/jquery.min.js"></script>
-<script src="../../js/jquery.flexslider.js"></script>
-<script type="text/javascript">
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      useCSS: Modernizr.touch
-    });
-  });
-</script>
+<script src="../../js/modernizr.js"></script>
 
 <!--==============CONTACT FORM=================-->
 <script src="../../js/contact_form.js"></script>
@@ -41,45 +27,7 @@
 <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 
 <!--==============Logo & Menu Bar=================-->
-
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-     </button>
-     <a class="navbar-brand" href="#"><img src="../../img/logoNav.png" alt="logo" class="img-responsive"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse" id="nav-main">
-        <ul class="nav navbar-nav">
-          <li><a href="../../#" class="scroll">GOLD</a></li>
-          <li><a href="../../#igold" class="scroll">IGOLD</a></li>
-          <li><a href="../../#planos" class="scroll">PLANOS</a></li>
-          <li><a href="../../#equipamentos" class="scroll">EQUIPAMENTOS</a></li>
-          <li><a href="../../#faq" class="scroll">FAQ</a></li>
-          <li><a href="#contato" id="cttScroll" class="scroll">CONTATO</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-right" role="form" id="formLogin" method="post" action="../../web/logar.php" style="margin:8px auto;">
-              <div class="form-group">
-                  <input type="text" class="form-control" name="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                  <input type="password" class="form-control" name="senha" placeholder="Senha">
-              </div>
-              <button type="submit" class="btn btn-default">Login</button>
-          </form>
-        </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
+<?php include('../../navbar.php'); ?>
 
 <!--============== Planos ==============-->
 <section class="Pricing">
@@ -92,7 +40,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="PlanBlock">
-							<img src="../../img/titleIg17.png" alt="Plano IG17" class="img-responsive">
+							<h1 class="title">Plano IG17</h1>
+							<!-- <img src="../../img/titleIg17.png" alt="Plano IG17" class="img-responsive"> -->
 						</div>
 					</div>
 				</div>
@@ -123,7 +72,7 @@
 									<div class="col-lg-12">
 										<p class="PricingDescription">Vantagens de ter o IGOLD</p>
 										<ul>
-											<li>Muito fácil de usar</li>
+											<li>Muito prático de usar</li>
 											<li>Manual no próprio APP</li>
 											<li>Baixo investimento</li>
 											<li>As principais cargas do mercado</li>
@@ -147,14 +96,14 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<p class="PricingDescription">Montadoras</p>
-								<img src="../../img/montadoras.png" alt="Montadoras" class="img-responsive">
+								<img src="../../img/montadorasIg17.png" alt="Montadoras" class="img-responsive">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="PricingBlock" style="padding-top:0;">
-									<p class="PricingTag text-right">R$320,00<p class="text-right"><small>12x s/Juros</small></p></p>
-									<p class="text-right">Hardware: R$95,00</p>
+									<p class="PricingTag text-right">R$324,50<p class="text-right"><small>12x s/Juros</small></p></p>
+									<p class="text-right">Hardware: R$99,50</p>
 									<p class="text-right">Plano: R$225,00</p>
 									<p class="text-right" style="font-size: 1em;">A partir do 2º ano, o valor cobrado será somente o do plano</p>
 								</div>
@@ -168,11 +117,11 @@
 				 </p>
 			   </div>
 			   <div class="row">
-				   <small>
+
 					   <p style="margin:0;">*Consulte serviços disponíveis em www.igold.chavesgold.com.br</p>
 					   <p style="margin:0;">**Para utilização diária não é necessária conexão com a internet, porém para download e atualização é necessário</p>
 					   <p style="margin:0;">***Liberação das cargas do momento da adessão do plano</p>
-				   </small>
+				   
 			   </div>
 			</div>
 		</div>
@@ -198,68 +147,69 @@
     </div>
   </section>
 
-<!--============== Contato ==============-->
+  <!--============== Contato ==============-->
 
-<section class="container Contact" id="contato">
-  <div class="row PageHead">
-    <div class="col-md-12">
-      <h1 class="title text-center">Contato</h1>
+  <section class="container Contact" id="contato">
+    <div class="row PageHead">
+      <div class="col-md-12">
+        <h1 class="title text-center">Contato</h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="contactInfo">
-        <div class="contactInfoItem">
-          <h4>Matriz</h4>
-          <p>Rua Luigi Greco, 46 - Barra Funda<br>
-          São Paulo - SP, CEP: 01135-030
-          </p>
-        </div>
-        <div class="contactInfoItem">
-          <p><a href="mailto:&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x67;&#x6F;&#x6C;&#x64;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
-        </div>
-        <div class="contactInfoItem">
-          <div>(11) 3879-6882</div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="contactInfo">
+          <div class="contactInfoItem">
+            <h4>Matriz</h4>
+            <p>Rua Benevides Ignácio Ramos, 108 – Parque Sisi<br/>
+                São Carlos – SP  CEP: 13562-500
+            </p>
+          </div>
+          <div class="contactInfoItem">
+            <p><a href="mailto:&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;">&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x63;&#x68;&#x61;&#x76;&#x65;&#x73;&#x67;&#x6F;&#x6C;&#x64;&#x2E;&#x63;&#x6F;&#x6D;&#x2E;&#x62;&#x72;</a></p>
+          </div>
+          <div class="contactInfoItem">
+            <div>(11) 3879-6870</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-     <ul class="phoneList">
-       <li>
-         <h4>Sede Jundiaí</h4>
-         <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
-          Tel: (11) 4525-6550
-         </p>
-       </li>
-       <li>
-         <h4>Sede Pouso Alegre</h4>
-         <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
-          Pouso Alegre - MG - CEP: 37550-000<br>
-          Tel: (35) 3421-4298
-         </p>
-       </li>
-     </ul>
+    <div class="row">
+      <!-- <div class="col-md-6">
+       <ul class="phoneList">
+         <li>
+           <h4>Sede Jundiaí</h4>
+           <p>Av Benedito Quina da Silva, 511 - Jundiai<br> São Paulo - SP CEP: 13212-141<br>
+            Tel: (11) 4525-6550
+           </p>
+         </li>
+         <li>
+           <h4>Sede Pouso Alegre</h4>
+           <p>Av. Pref Olavo Gomes de Oliveira Aeroporto<br>
+            Pouso Alegre - MG - CEP: 37550-000<br>
+            Tel: (35) 3421-4298
+           </p>
+         </li>
+       </ul>
+      </div> -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form method="post" class="form" id="contact-form">
+          <div class="form-group">
+            <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="col-md-6">
-      <form method="post" class="form" id="contact-form">
-        <div class="form-group">
-          <input class="form-control input-lg" type="text" placeholder="Nome" name="name" id="name" required>
-        </div>
-        <div class="form-group">
-          <input class="form-control input-lg" type="email" placeholder="Email" name="email" id="email" required>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" rows="10" name="message" placeholder="Sua mensagem" id="message" required></textarea>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+  </section>
 
 <!--============== Footer ==============-->
 
@@ -272,6 +222,25 @@
   </div>
 </div>
 
+<!--============== Dialog ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+  </div>
+</dialog>
+
+<!--============== Dialog Account Errada ==============-->
+<dialog id="dialog_login" class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <p id="dialog_login_msg" style="color:black;font-weight:bold;text-align: justify;"></p>
+  </div>
+  <div class="mdl-dialog__actions">
+    <a href="/login.php"><button type="button" class="mdl-button">OK</button></a>
+ </div>
+</dialog>
 
 
 <!--==============QUERY LIBRARY=================-->
